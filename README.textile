@@ -11,12 +11,12 @@ h2. Installation & Updates
 To install this bundle run the following commands from the command line
 
 <pre><code>
-  cd "~/Library/Application Support/TextMate/Bundles/"
+  cd ~/Library/Application\ Support/TextMate/Bundles/
   git clone git://github.com/hellvinz/textgrok-tmbundle.git "TextGrok.tmbundle"
 </code></pre>
 
 When you wish to update the bundle simply run these commands
 <pre><code>
-  cd "~/Library/Application Support/TextMate/Bundles/TextGrok.tmbundle"
+  cd ~/Library/Application\ Support/TextMate/Bundles/TextGrok.tmbundle"
   git pull
 </code></pre>
