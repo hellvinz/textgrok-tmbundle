@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>TextGrok</string>
+	<key>ordering</key>
+	<array>
+		<string>C0738E08-4302-4F96-B916-681A70EA43E3</string>
+		<string>34A5A29F-F402-4418-9F10-EEF8A9BFB421</string>
+		<string>E91C3BC9-AFE0-44FF-B767-FCEC785BD6CA</string>
+		<string>2814FE57-6A05-4E4A-BFAC-D21DDD313C8E</string>
+		<string>AAB5E97F-D1DB-474F-A7A0-2BBE1D94FE44</string>
+		<string>763344AA-F791-4D69-B706-01F5CB705517</string>
+	</array>
+	<key>uuid</key>
+	<string>48AE12F5-4B02-4BCC-9F24-3DBD43CD14F2</string>
+</dict>
+</plist>

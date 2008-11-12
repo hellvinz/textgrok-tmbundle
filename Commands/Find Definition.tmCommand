@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env /Users/vincent/Downloads/jruby-1.1.4/bin/jruby -w
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/searcher.rb"
+
+OpenGrokSearcher.instance.definition("#{ENV['TM_CURRENT_WORD']}")</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~d</string>
+	<key>name</key>
+	<string>Find Definition</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>uuid</key>
+	<string>C0738E08-4302-4F96-B916-681A70EA43E3</string>
+</dict>
+</plist>
