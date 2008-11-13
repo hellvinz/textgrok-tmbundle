@@ -20,3 +20,11 @@ When you wish to update the bundle simply run these commands
   cd ~/Library/Application\ Support/TextMate/Bundles/TextGrok.tmbundle
   git pull
 </code></pre>
+
+h3. First run
+
+If your jruby installation is not in your $PATH, please follow the instructions under the important section of this  "page":path
+[path]
+
+Run the bundle update index task (this can be long if your project has a large number of revisions). Then your done!
+

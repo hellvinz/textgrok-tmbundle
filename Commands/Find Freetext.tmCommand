@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env /Users/vincent/Downloads/jruby-1.1.4/bin/jruby -w
+	<string>#!/usr/bin/env jruby -w
 require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/searcher.rb"
 
 OpenGrokSearcher.instance.freetext("#{ENV['TM_CURRENT_WORD']}")</string>
