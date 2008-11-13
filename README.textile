@@ -24,7 +24,7 @@ When you wish to update the bundle simply run these commands
 h3. First run
 
 If your jruby installation is not in your $PATH, please follow the instructions under the important section of this  "page":path
-[path]
+[path]http://manual.macromates.com/en/shell_commands#search_path
 
 Run the bundle update index task (this can be long if your project has a large number of revisions). Then your done!
 
