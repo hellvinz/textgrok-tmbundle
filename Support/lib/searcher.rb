@@ -62,20 +62,23 @@ class OpenGrokSearcher
   def method_missing(name, *args, &block)
     raise name.to_s unless SEARCH_METHODS.include? name.to_sym
     @search_engine = SearchEngine.new
-    @results = ArrayList.new(5)
     @search_engine.send("set#{name.to_s.capitalize}", args[0])
     @nb_hits = @search_engine.search
-    search_output
+    search_output(name)
   end
   
-  def search_output
-    html_header("OpenGrok search results","Definition search for #{ENV['TM_CURRENT_WORD']}")
+  def search_output(name)
+    html_header("OpenGrok search results","#{name} search for #{ENV['TM_CURRENT_WORD']}")
     
-    @search_engine.more(0,@nb_hits,@results)  
-    @results.each_with_index do |result,index|
+    results = ArrayList.new(@nb_hits+1)
+    @search_engine.more(0,@nb_hits,results)  
+    results.each_with_index do |result,index|
       puts "#{index} - <a href='txmt://open?url=file://#{File.join(@project_path,result.getPath)}&amp;line=#{result.getLineno}' accessKey='#{index}'>#{result.getLine}</a> in #{result.getPath}</br>"
     end
     
+  rescue => e
+      puts "<pre>#{e.backtrace}</pre>"
+  ensure
     html_footer
   end
 end
